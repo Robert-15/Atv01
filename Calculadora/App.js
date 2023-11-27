@@ -52,6 +52,8 @@ export default function App() {
         calculator()
         return
       case '+/-':
+        let newValue = Number(currentNumber) * (-1)
+        setCurrentNumber(newValue.toString())
         return
     }
 
